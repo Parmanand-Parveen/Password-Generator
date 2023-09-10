@@ -1,0 +1,10 @@
+let display = document.querySelector(".display");
+let copy_btn = document.querySelector(".copy_btn");
+let password_length = document.querySelector(".password_length");
+let slider = document.querySelector(".slider")
+let uppercase = document.querySelector("#uppercase");
+let lowercase = document.querySelector("#lowercase");
+let number = document.querySelector("#number");
+let symbol = document.querySelector("#symbol");
+let strength= document.querySelector("#strength");
+let generate_password = document.querySelector("#password_generator");

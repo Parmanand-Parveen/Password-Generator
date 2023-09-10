@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generate</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" integrity="sha512-HXXR0l2yMwHDrDyxJbrMD9eLvPe3z3qL3PPeozNTsiHJEENxx8DH2CxmV05iwG0dwoz5n4gQZQyYLUNt1Wdgfg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="wrapper">
+        <!-- Main container -->
+      <div class="main-container h-screen w-screen flex justify-center items-center">
+        <div >
+            <!-- Heading -->
+            <h1 class="text-center text-3xl text-white font-bold mb-3">Password Generator</h1>
+            <!-- Password Display -->
+            <div class="h-11 border bg-[rgba(76,76,76,0.5)] flex justify-between p-3 items-center border-[rgba(76,76,76,0.5)] mb-3 rounded-lg border-b-4">
+                <input class="display bg-[rgba(76,76,76,0.1)]"  type="text" readonly placeholder="Password">
+                <button class="copy_btn"><i class="ri-file-copy-line"></i></button>
+            </div>
+            <!-- Condition div -->
+            <div class="bg-[rgba(76,76,76,0.5)] p-3 rounded-md">
+                <!-- Display -->
+                <div class="flex justify-between mb-2">
+                    <p class="text-lg font-semibold text-white">Password length</p>
+                    <p class="password_length text-xl font-semibold text-yellow-600">0</p>
+                </div>
+                <!-- Slider -->
+                <div class="slidecontainer w-full mb-3">
+                    <input class="w-full slider" type="range" min="1" max="20"  id="myRange">
+                </div>  
+                <div>
+                    <input type="checkbox" id="uppercase" class="checkbox">
+                    <label for="uppercase" class="text-white">Include uppercase letter</label>
+                </div> 
+                <div>
+                    <input type="checkbox" id="lowercase" class="checkbox">
+                    <label for="lowercase" class="text-white">Include lowercase letter</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="number" class="checkbox">
+                    <label for="number" class="text-white">Include number</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="symbol" class="checkbox">
+                    <label for="symbol" class="text-white">Include symbol</label>
+                </div> 
+                <div class="flex justify-between mb-3">
+                    <p class="text-white">Strength</p>
+                    <div id="strength" class="h-6 w-6 rounded-full bg-[#f43838cf]" ></div>
+                </div>
+                <button id="generate_password" class="w-full bg-[rgba(154,73,255,0.8)] py-2 text-lg text-white font-extrabold border-b-2 border-black rounded-xl">Generate Password</button>  
+    
+    
+            </div>
+    
+          </div>
+      </div>  
+    
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
