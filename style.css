@@ -9,13 +9,24 @@ background: linear-gradient(43deg, rgba(185,60,210,1) 0%, rgba(154,73,255,1) 100
 
 .slider{
         appearance:none;
-        border-radius: 25px;
-        background-color: white;
+        border-radius: 26px;
+        background:white;
+       
         
 }
 
 .slider::-webkit-slider-thumb{
-    background:chartreuse;
+   appearance: none;
+   width: 15px;
+   height: 15px;
+   border-radius: 25px;
+   border:50% ;
+   background:linear-gradient(43deg, rgba(185,60,210,1) 0%, rgba(154,73,255,1) 100%);
+}
+
+
+.display::-webkit-input-placeholder{
+    color: #fff;
 }
 
 .checkbox{
